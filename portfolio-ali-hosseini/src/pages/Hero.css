@@ -1,0 +1,143 @@
+.hero{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #390561;
+
+    background-image: url("Background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.hero-container{
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.109);
+    background: var(--try, linear-gradient(232deg, rgba(106, 32, 185, 0.3) 23.01%, rgba(175, 82, 173, 0.2) 83.67%));
+    box-shadow: 0px 4px 4px 0px #00000040;
+    backdrop-filter: blur(5px);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow-wrap: break-word;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.bg{
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* break point for tablet and smaller */
+@media (max-width: 768px) {
+    .hero-container{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        overflow-wrap: break-word;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+
+
+h1{
+    all: unset;
+    font-size: 100px;
+    font-family: 'Post No Bills Colombo SemiBold', sans-serif;
+    color: white;
+    letter-spacing: 1rem;
+}
+
+.link-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.icon{
+    font-size: 2.3rem;
+    color: white;
+    transition: 0.2s;
+}
+.arrow{
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.648);
+    transition: 0.2s;
+}
+.arrow:hover{
+    color: white;
+    transform: scaleY(1.03)translateY(5px);
+}
+
+.view-btn{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.593);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    transition: 0.2s;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+body:has(.view-btn:hover) .view-btn {
+    color: rgb(255, 255, 255);
+    /* add underline */
+  }
+
+  body:has(.view-btn:hover) .arrow {
+    color: white;
+    transform: scaleY(1.03)translateY(5px);
+  }
+
+@media (max-width: 650px){
+    .hero-container{
+        h1{
+            all: unset;
+            font-size: 50px;
+            font-family: 'Post No Bills Colombo SemiBold', sans-serif;
+            color: white;
+            letter-spacing: 1rem;
+            text-align: center;
+        }
+    }
+    .link-container{
+        width: 80%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+    }
+
+    .icon{
+        font-size: 2rem;
+    }
+}
