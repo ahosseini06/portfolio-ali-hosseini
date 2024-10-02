@@ -25,23 +25,25 @@ function App() {
   ]
   return (
     <div className="App">
-      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}/>
-
-      <div className="hero-container">
-        <h1>ALI HOSSEINI</h1>
-        <div className="link-container">
-          {links.map(link => {
-            return (
-              <Link name={link.name} link={link.link} icon={link.icon}>
-              </Link>
-            );
-          })}
+        <div className='bg'>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}/>
+      
+        <div className="hero-container">
+          <h1>ALI HOSSEINI</h1>
+          <div className="link-container">
+            {links.map(link => {
+              return (
+                <Link name={link.name} link={link.link} icon={link.icon}>
+                </Link>
+              );
+            })}
+          </div>
         </div>
-      </div>
-      <div style={{height: '100%'}}>
-        <div className="view-btn">
-        View my work
-        <IoIosArrowDown className='arrow'/>
+        <div style={{height: '100%'}}>
+          <div className="view-btn">
+          View my work
+          <IoIosArrowDown className='arrow'/>
+          </div>
         </div>
       </div>
     </div>
