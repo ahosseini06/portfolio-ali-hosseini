@@ -25,8 +25,6 @@ function App() {
   ]
   return (
     <div className="App">
-        <div className='bg'>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}/>
       
         <div className="hero-container">
           <h1>ALI HOSSEINI</h1>
@@ -39,13 +37,14 @@ function App() {
             })}
           </div>
         </div>
-        <div style={{height: '100%'}}>
+        <div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
           <div className="view-btn">
-          View my work
-          <IoIosArrowDown className='arrow'/>
+            View my work
+            <IoIosArrowDown className='arrow'/>
           </div>
         </div>
-      </div>
+          
+
     </div>
   );
 }
