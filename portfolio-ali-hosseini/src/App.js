@@ -25,6 +25,8 @@ function App() {
   ]
   return (
     <div className="App">
+      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}/>
+
       <div className="hero-container">
         <h1>Ali Hosseini</h1>
         <div className="link-container">
@@ -36,10 +38,12 @@ function App() {
           })}
         </div>
       </div>
+      <div style={{height: '100%'}}>
         <div className="view-btn">
         View my work
         <IoIosArrowDown className='arrow'/>
         </div>
+      </div>
     </div>
   );
 }
