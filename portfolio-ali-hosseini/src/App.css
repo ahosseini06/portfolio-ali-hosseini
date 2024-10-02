@@ -1,0 +1,81 @@
+.App{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #390561;
+
+    background-image: url("Background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.hero-container{
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.109);
+    background: var(--try, linear-gradient(232deg, rgba(106, 32, 185, 0.3) 23.01%, rgba(175, 82, 173, 0.2) 83.67%));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+h1{
+    all: unset;
+    font-size: 100px;
+    font-family: 'Post No Bills Colombo SemiBold', sans-serif;
+    color: white;
+    letter-spacing: 1rem;
+}
+
+.link-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.icon{
+    font-size: 2.5rem;
+    color: white;
+    transition: 0.2s;
+}
+.arrow{
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.648);
+    transition: 0.2s;
+}
+.arrow:hover{
+    color: white;
+    transform: scaleY(1.03)translateY(5px);
+}
+/* when div1 is hovered make div2 blue */
+body:has(.arrow:hover) .view-btn {
+    color: rgb(255, 255, 255);
+  }
+.view-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.593);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-top: 5vh;
+    transition: 0.2s;
+}
