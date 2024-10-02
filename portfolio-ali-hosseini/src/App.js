@@ -28,7 +28,7 @@ function App() {
       <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%'}}/>
 
       <div className="hero-container">
-        <h1>Ali Hosseini</h1>
+        <h1>ALI HOSSEINI</h1>
         <div className="link-container">
           {links.map(link => {
             return (

@@ -1,6 +1,6 @@
 .link{
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     transition: 0.2s;
@@ -10,15 +10,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    white-space: nowrap;
     padding: 10px;
     cursor: pointer;
     text-align: center;
     gap: 10px;
 
-    flex: 1;
+    margin-right: 2rem;
+    margin-left: 2rem;
+
+    min-width: max-content; /* Ensures no buttons shrink too much */
+    flex: 1; /* Ensures all buttons are the same size */
 }
 .link:hover{
     background-color: rgba(0, 0, 0, 0.237);
     border-radius: 10px;
+}
+
+@media (max-width: 650px){
+    .link{
+        margin-right: 0rem;
+        margin-left: 0rem;
+        font-size: 0.01rem;
+        color: transparent;
+    }
 }
