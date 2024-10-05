@@ -6,6 +6,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoCamera } from "react-icons/io5";
 import { FaSquareInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "../components/link/Link";
 
@@ -20,6 +22,11 @@ const Hero = ({ handleClick }) => {
       name: "Linked-In",
       link: "https://www.linkedin.com/in/01-ali-hosseini/",
       icon: <FaLinkedin className="icon" />,
+    },
+    {
+      name: "YouTube",
+      link: "https://www.youtube.com/@AliHosseini-CandyMedia-fy1dn/videos",
+      icon: <FaYoutube className="icon" />,
     },
     {
       name: "Instagram",
@@ -51,10 +58,10 @@ const Hero = ({ handleClick }) => {
           alignItems: "center",
         }}
       >
-        <button className="view-btn" href="#projects" onClick={handleClick}>
+        {/*<button className="view-btn" href="#projects" onClick={handleClick}>
           View my work
           <IoIosArrowDown className="arrow" />
-        </button>
+        </button>*/}
       </div>
     </div>
   );

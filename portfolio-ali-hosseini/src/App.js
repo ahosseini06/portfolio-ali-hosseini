@@ -12,9 +12,9 @@ function App() {
   return (
     <div>
       <Hero handleClick={handleClick}/>
-      <div ref={projectsRef}>
+      {/*<div ref={projectsRef}>
         <Projects />
-      </div>
+      </div>*/}
       
     </div>
   );

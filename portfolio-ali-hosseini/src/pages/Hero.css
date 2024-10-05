@@ -94,7 +94,7 @@ h1{
     animation: smoothAnimation 3s ease-in-out infinite;
     transition: 0.2s;
     animation-fill-mode: forwards;
-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
   
