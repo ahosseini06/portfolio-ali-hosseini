@@ -1,0 +1,62 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #220c43;
+    padding-top: 50px;
+}
+
+.t1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    gap: 50px;
+}
+
+.c1{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    color: #fae0fb;
+}
+
+.c2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title{
+    all: unset;
+    font-family: 'Post No Bills Colombo ExtraBold', sans-serif;
+    letter-spacing: 1rem;
+    line-height: 1.4rem;
+    font-size: 80px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.phone{
+    width: 100%;
+}
+.laptop{
+    width: 100%;
+}
+
+@media (max-width: 425px) {
+    .t1{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .c1{
+        width: 100%;
+    }
+    .c2{
+        width: 100%;
+    }
+    .phone{
+        width: 50%;
+    }
+}

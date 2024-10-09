@@ -6,4 +6,14 @@
     align-items: center;
     padding: 100px;
     font: 1.5rem 'Roboto', sans-serif;
+    gap: 7vw;
+    /*background-color: #130220;*/
+}
+
+/* media smaller than 500px */
+@media (max-width: 500px){
+    .projects{
+        padding: 30px;
+        gap: 100px;
+    }
 }
