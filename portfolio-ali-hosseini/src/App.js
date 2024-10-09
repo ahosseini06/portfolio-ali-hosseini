@@ -1,21 +1,24 @@
 import React from 'react';
-import { useRef } from 'react';
-import Hero from './pages/Hero';
-import Projects from './pages/Projects';
-
+import Home from './pages/Home';
+import { RouterProvider } from 'react-router';
+import { BrowserRouter, createBrowserRouter, useFetcher } from 'react-router-dom';
+import PlaySync from './portfolio/PlaySync';
 
 function App() {
-  const projectsRef = useRef(null);
-  const handleClick = () => {
-    projectsRef.current.scrollIntoView({ behavior: "smooth" });
-  };
+  const router = createBrowserRouter  ([
+    {
+      path: "/",
+      element: <Home/>,
+    },
+    {
+      path: "/PlaySync",
+      element: <PlaySync/>,
+    },
+  ]);
+
   return (
     <div>
-      <Hero handleClick={handleClick}/>
-      {/*<div ref={projectsRef}>
-        <Projects />
-      </div>*/}
-      
+      <RouterProvider router={router} />
     </div>
   );
 }
