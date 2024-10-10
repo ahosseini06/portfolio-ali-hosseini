@@ -64,7 +64,7 @@ const Hero = ({ handleClick }) => {
           alignItems: "center",
         }}
       >
-        {/*<button className="view-btn" href="#projects" onClick={handleClick}>
+        {/* <button className="view-btn" href="#projects" onClick={handleClick}>
           View my work
           <IoIosArrowDown className="arrow" />
         </button>*/}

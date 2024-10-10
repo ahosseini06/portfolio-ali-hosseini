@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import Hero from "./Hero";
-// import Projects from "./Projects";
+import Projects from "./Projects";
 
 function Home() {
   const projectsRef = useRef(null);

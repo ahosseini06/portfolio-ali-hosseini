@@ -3,8 +3,9 @@
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    background-color: #220c43;
+    background-color: #1c0d33;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .t1{
@@ -19,6 +20,7 @@
     width: 40%;
     flex-direction: column;
     color: #fae0fb;
+    padding-top: 50px;
 }
 
 .c2{
@@ -32,10 +34,19 @@
     font-family: 'Post No Bills Colombo ExtraBold', sans-serif;
     letter-spacing: 1rem;
     line-height: 1.4rem;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
+}
+
+.description{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fae0fb;
+    margin-bottom: 50px;
+    padding-left: 20px;
 }
 
 .phone{
@@ -43,20 +54,119 @@
 }
 .laptop{
     width: 100%;
+    margin-bottom: 50px;
 }
 
-@media (max-width: 425px) {
+.bpContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: #382075;
+    /* gradient */
+    background: linear-gradient(90deg, #5720754f 0%, #3a227850 100%);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #6850a580;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    transition: transform 0.2s;
+
+    width: 90%;
+}
+
+.bp:hover{
+    /* zoom in a bit */
+    transform: scale(1.02);
+    
+}
+
+.bpHeading{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size:1.6rem;
+    font-weight: bold;
+    color: #7342ef;
+    margin-bottom: 0px;
+}
+
+.bpDescription{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.imgDescription{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media queries */
+@media (max-width: 1000px){
+    .page{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .phone{
+        width: 50%;
+    }
     .t1{
         flex-direction: column;
         gap: 20px;
     }
+
     .c1{
         width: 100%;
+        padding-top: 20px;
+        align-items: center;
+        text-align: center;
+
     }
+
     .c2{
-        width: 100%;
+        align-items: center;
+        text-align: center;
     }
+
+    .title{
+        font-size: 4rem;
+    }
+
+    .description{
+        font-size: 1.2rem;
+    }
+
+    .bp{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
     .phone{
-        width: 50%;
+        width: 90%;
+    }
+    .title{
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
+        text-align: center;
     }
 }
