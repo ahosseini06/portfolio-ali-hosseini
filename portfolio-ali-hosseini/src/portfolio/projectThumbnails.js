@@ -36,7 +36,7 @@ export const projects = [
       name: "ORDR",
       description: "A restaurant management system.",
       tags: [REACT, NODE, FULL_STACK, CROSS_PLATFORM],
-      bg: "url(./playmaker.png)",
+      bg: "url(./ORDR_Waiter.svg)",
       href: "/ORDR",
     },
     {

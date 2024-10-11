@@ -3,6 +3,9 @@ import Home from './pages/Home';
 import { RouterProvider } from 'react-router';
 import { BrowserRouter, createBrowserRouter, useFetcher } from 'react-router-dom';
 import PlaySync from './portfolio/PlaySync';
+import Ordr from './portfolio/Ordr';
+// import app css
+import './App.css';
 
 function App() {
   const router = createBrowserRouter  ([
@@ -14,6 +17,10 @@ function App() {
       path: "/PlaySync",
       element: <PlaySync/>,
     },
+    {
+      path: "/ordr",
+      element: <Ordr/>,
+    }
   ]);
 
   return (

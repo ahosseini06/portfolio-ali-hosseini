@@ -6,9 +6,12 @@ import { projects } from "../portfolio/projectThumbnails";
 const Projects = () => {
   return (
     <div className="projects">
-      {projects.map((p) => (
-        <ProjectCard p={p}></ProjectCard>
-      ))}
+      <h1 className="title">PROJECTS</h1>
+      <div className="project-list">
+        {projects.map((p) => (
+          <ProjectCard p={p}></ProjectCard>
+        ))}
+      </div>
     </div>
   );
 };

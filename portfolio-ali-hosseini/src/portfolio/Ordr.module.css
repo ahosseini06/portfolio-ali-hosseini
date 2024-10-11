@@ -1,0 +1,121 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #1c0d33;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.t1{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.title{
+    all: unset;
+    font-family: 'Post No Bills Colombo ExtraBold', sans-serif;
+    letter-spacing: 1rem;
+    line-height: 1.4rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.introduction{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fae0fb;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+.description{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fae0fb;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.imgDescription{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* media queries */
+@media (max-width: 768px){
+    .page{
+        padding-top: 50px;
+        align-items: center;
+    }
+    .intro{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    
+    }
+    .row{
+        flex-direction: column;
+    }
+    .t1{
+        width: 90%;
+        align-items: center;
+    }
+    .imgContainer{
+        width: 100%;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .introduction{
+        font-size: 1rem;
+        padding-left: unset;
+    }
+    .description{
+        font-size: 1rem;
+    }
+    .imgDescription{
+        font-size: 1rem;
+    }
+}
