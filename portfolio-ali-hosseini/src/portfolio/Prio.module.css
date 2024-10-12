@@ -1,0 +1,152 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #1c0d33;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.t1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1500px;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.title{
+    all: unset;
+    font-family: 'Post No Bills Colombo ExtraBold', sans-serif;
+    letter-spacing: 1rem;
+    line-height: 1.4rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.introduction{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fae0fb;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+.description{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fae0fb;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.img{
+    width: 50vh;
+}
+
+.imgDescription{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bpContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    background-color: #382075;
+    /* gradient */
+    background: linear-gradient(90deg, #5720754f 0%, #3a227850 100%);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #6850a580;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    transition: transform 0.2s;
+
+    width: 90%;
+}
+
+.bp:hover{
+    /* zoom in a bit */
+    transform: scale(1.02);
+    
+}
+
+.bpHeading{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size:1.6rem;
+    font-weight: bold;
+    color: #7342ef;
+    margin-bottom: 0px;
+}
+
+.bpDescription{
+    all: unset;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* media queries */
+@media (max-width: 768px){
+    .page{
+        padding-top: 50px;
+        align-items: center;
+    }
+    .intro{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .t1{
+        width: 90%;
+        align-items: center;
+    }
+    .introduction{
+        padding-left: 0px;
+    }
+}

@@ -6,6 +6,7 @@ import PlaySync from './portfolio/PlaySync';
 import Ordr from './portfolio/Ordr';
 // import app css
 import './App.css';
+import Prio from './portfolio/Prio';
 
 function App() {
   const router = createBrowserRouter  ([
@@ -20,6 +21,10 @@ function App() {
     {
       path: "/ordr",
       element: <Ordr/>,
+    },
+    {
+      path: '/prio',
+      element: <Prio/>
     }
   ]);
 

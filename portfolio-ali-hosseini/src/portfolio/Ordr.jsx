@@ -7,15 +7,6 @@ import kitchen from "./assets/ORDR_Kitchen.svg";
 import manager from "./assets/ORDR_Manager.svg";
 
 const Ordr = () => {
-  //list of bulletPoints
-  //bulletPoint is {heading: string, description: string}
-  const bulletPoints = [
-    {
-      heading: "Seamless Payment and Registration",
-      description:
-        "Teams can register online with a streamlined process that consolidates everything from sign-ups to secure payments, eliminating paperwork and manual tracking.",
-    },
-  ];
   return (
     <div className={styles.page}>
       <div className={styles.t1}>

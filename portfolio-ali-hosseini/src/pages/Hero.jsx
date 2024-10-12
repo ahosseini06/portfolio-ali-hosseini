@@ -39,11 +39,6 @@ const Hero = ({ handleClick }) => {
       link: "https://www.instagram.com/cxndymedia/",
       icon: <FaSquareInstagram className="icon" />,
     },
-    {
-      name: "Media",
-      link: "https://www.cxndy.ca",
-      icon: <IoCamera className="icon" />,
-    },
   ];
   return (
     <div className="hero">
@@ -64,10 +59,10 @@ const Hero = ({ handleClick }) => {
           alignItems: "center",
         }}
       >
-        {/* <button className="view-btn" href="#projects" onClick={handleClick}>
+        <button className="view-btn" href="#projects" onClick={handleClick}>
           View my work
           <IoIosArrowDown className="arrow" />
-        </button>*/}
+        </button>
       </div>
     </div>
   );

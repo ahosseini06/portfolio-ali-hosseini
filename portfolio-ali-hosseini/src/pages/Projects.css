@@ -29,4 +29,11 @@
         padding: 30px;
         gap: 100px;
     }
+    .project-list{
+        margin-top: -10px;
+    }
+    .title{
+        font-size: 2rem;
+        margin-bottom: 0px;
+    }
 }

@@ -43,7 +43,7 @@ export const projects = [
       name: "PRIO",
       description: "A cloud-based task management system.",
       tags: [REACT, NODE, FULL_STACK, CROSS_PLATFORM, IN_PROGRESS],
-      bg: "url(./thumbnails/PSTN.png)",
+      bg: "url(./PTN.png)",
       href: "/PRIO",
     },
   ];
