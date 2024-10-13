@@ -17,7 +17,7 @@
 }
 
 .project-card:hover{
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.538);
 }
 
@@ -94,12 +94,6 @@
     padding-right: 8px;
     transition: 0.2s;
     cursor: default; 
-}
-
-.tag:hover{
-    /* slight zoom and shadow */
-    transform: scale(1.02);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
 }
 
 @media (max-width: 425px){

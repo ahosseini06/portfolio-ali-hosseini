@@ -20,7 +20,7 @@ const Hero = ({ handleClick }) => {
       icon: <FaGithub className="icon" />,
     },
     {
-      name: "Linked-In",
+      name: "LinkedIn",
       link: "https://www.linkedin.com/in/01-ali-hosseini/",
       icon: <FaLinkedin className="icon" />,
     },
